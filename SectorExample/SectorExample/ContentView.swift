@@ -15,7 +15,6 @@ struct ContentView: View {
                 VStack(alignment: .leading){
                 Text("Gráfico de Setores").font(.title2)
                         .padding()
-                    
                     VStack(alignment: .center) {
                     PieChart(
                         data: [0.25, 0.25, 0.25, 0.25],
