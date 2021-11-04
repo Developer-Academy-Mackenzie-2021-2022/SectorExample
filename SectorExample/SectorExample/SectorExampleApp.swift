@@ -14,8 +14,6 @@ struct SectorExampleApp: App {
         WindowGroup {
             ContentView()
             
-            AreaGraph()
-            HeatmapGraph()
         
         }
     }
