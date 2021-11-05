@@ -5,7 +5,7 @@ _O gráfico de Setores (também conhecido como gráfico de Pizza) é uma represe
 
 <br>
 
-<img width="370" alt="Screen Shot 2021-11-04 at 17 19 41" src="https://user-images.githubusercontent.com/77726310/140413836-8d3dccb7-25a1-4cc5-b2d4-a018e6de7873.png">
+![Telas](https://user-images.githubusercontent.com/77726310/140554263-e0c3e65a-32c1-48ab-91f0-b4cc044e5c57.png)
 
 
 # Passos
