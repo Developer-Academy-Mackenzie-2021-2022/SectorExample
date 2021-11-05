@@ -1,48 +1,58 @@
 # SectorExample
-Repositório com app exemplo para o uso do gráfico de Setores. <br>
 
-_O gráfico de Setores (também conhecido como gráfico de Pizza) é uma representação gráfica de uma relação de proporção ou porcentagem. Para criar o gráfico de setores, é necessário apenas a passagem de matriz de CGPoints com valores referentes aos dados numéricos, à cor do setor e à legenda do dado._
-
-<br>
+1. [O que é](#1-o-que-é-o-gráfico-de-setores)
+2. [Requerimentos](#2-requirementos)
+3. [Uso](#3-uso)
+4. [Formato de entrada de dados](#4-formato-de-entrada-de-dados)
+5. [Componentes](#5-componentes)
+      - [Parâmetros de entrada para criação do gráfico](#parâmetros-de-entrada-para-criação-do-gráfico)
+7. [Autores](#6-autores)
 
 ![Telas](https://user-images.githubusercontent.com/77726310/140554263-e0c3e65a-32c1-48ab-91f0-b4cc044e5c57.png)
 
 
-# Passos
-## 1. Criando uma estrutura básica para a utilização do Framework
-<img width="1792" alt="Screen Shot 2021-11-04 at 17 23 40" src="https://user-images.githubusercontent.com/77726310/140414480-5e449a3d-0165-40fa-8550-b66ad52db089.png">
-Fonte: https://www.fm2s.com.br/tipos-de-graficos/
+# 1. O que é o gráfico de Setores
+Um gráfico de setores (também conhecido como gráfico de pizza) compara as partes com um todo. Como tal, mostra uma distribuição percentual. A pizza representa o conjunto de dados total e cada segmento da pizza é uma categoria específica dentro do todo.
 
-## 2. Substituindo o retângulo preto pelo gráfico <br>
-
-### Como utilizar a classe?
-PieChart(data: [], cor: [], legenda: p[]))
-        
-O gráfico deve receber os valores numéricos que correspoderão à cada setor do gráfico em uma matriz.  No exemplo, utilizaremos com 4 valores idênticos.
-<img width="1792" alt="Screen Shot 2021-11-04 at 17 29 35" src="https://user-images.githubusercontent.com/77726310/140415207-7df04d7d-dfd4-4ec6-89fc-021089d7e735.png">
+Fonte:  <a href="https://www.fm2s.com.br/tipos-de-graficos/"> FM2S </a>
 
 
-* points: [[CGPoints]] <br>
-⚠️ Use o nome da classe do gráfico para instanciar o gráfico em seu projeto: PieChart <br>
-⚠️ Passe como parâmetro, para o seu gráfico, uma matriz com CGPoints.
+# 2. Requirementos
+- iOS 13 ou mais
+- macOS 15 ou mais
+- XCode 11 ou mais
 
-## 6. Personalizando o gráfico 
-### Título 
-⚠️ Passe mais um parâmetro para o seu gráfico, com o título desejado <br>
-Text(String.font(title) <br>
-<img width="1792" alt="Screen Shot 2021-11-04 at 17 32 06" src="https://user-images.githubusercontent.com/77726310/140415783-5112e99f-4ecd-47ad-a2d6-911915447965.png">
+# 3. Uso
+### Forma de criar gráficos
+O gráfico deve receber os valores numéricos que correspoderão à cada setor do gráfico em uma matriz, assim como uma cor e legenda para os setores.  
 
+```swift
+import Everest
 
-### Cores 
-⚠️ Passe para seu gráfico, como parâmetro, um vetor de Cores (tipo Cor). Seu vetor deve conter a mesma quantidade de cores que as variáveis. No caso, vamos utilizar 4 cores por estarmos com 4 valores. <br>
-* cor: [Color(R: x / 255, G: x / 255, B: x / 255)
-<img width="1791" alt="Screen Shot 2021-11-04 at 17 45 39" src="https://user-images.githubusercontent.com/77726310/140417388-b67bb674-4e08-47cf-aff8-497fa9c8fe73.png">
+PieChart(data: [Double], cor: [Color]>, legenda: [String])
 
-
-
-### Legenda 
-⚠️ Passe mais um parâmetro para o seu gráfico, com o nome de cada variável <br>
-* legenda: [String] <br>
-<img width="1792" alt="Screen Shot 2021-11-04 at 17 46 31" src="https://user-images.githubusercontent.com/77726310/140417469-c7fc3662-a951-437e-950e-40179393d9b0.png">
+````
 
 
+# 4. Formato de entrada de dados
+Exemplo de entrada:
+```swift
+PieChart(
+                            data: [30, 25, 15, 30],
+                            cor: [.color1, .color2, .color3, .color4],
+                            legenda: ["Ex.1", "Ex.2", "Ex.3", "Ex.4"])
+````
+
+# 5. Componentes
+### Parâmetros de entrada para criação do gráfico
+
+Nome | Tipo | Descrição | Obrigatório
+------------ | ------------- | ------------- | -------------
+data | Vetor de Data | Vetor que recebe os dados numéricos (porcentagens) para criação de cada setor | Sim
+cor | Color | Vetor que receberá as cores para cada setor | Sim
+legenda | Vetor de Strings | Legenda referente à cada setor informado | Sim
+
+# 6. Autores
+<a href="https://github.com/thallissousa"> Thallis Sousa </a> <p>
+<a href= "https://github.com/letchern"> Leticia Chern </a> <p>
+<a href="https://github.com/mperassi"> Marcelo Perassi </a> <p>
