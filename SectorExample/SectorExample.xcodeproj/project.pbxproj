@@ -11,7 +11,7 @@
 		068BFA61273440040042BC63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068BFA60273440040042BC63 /* ContentView.swift */; };
 		068BFA63273440050042BC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068BFA62273440050042BC63 /* Assets.xcassets */; };
 		068BFA66273440050042BC63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068BFA65273440050042BC63 /* Preview Assets.xcassets */; };
-		068BFA70273440D70042BC63 /* FrameworkDeGraficos in Frameworks */ = {isa = PBXBuildFile; productRef = 068BFA6F273440D70042BC63 /* FrameworkDeGraficos */; };
+		069EA16F2735976C009FB8B6 /* Everest in Frameworks */ = {isa = PBXBuildFile; productRef = 069EA16E2735976C009FB8B6 /* Everest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		068BFA60273440040042BC63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		068BFA62273440050042BC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068BFA65273440050042BC63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		068BFA6D2734401D0042BC63 /* FrameworkDeGraficos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FrameworkDeGraficos; path = ../../NC4/FrameworkDeGraficos; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068BFA70273440D70042BC63 /* FrameworkDeGraficos in Frameworks */,
+				069EA16F2735976C009FB8B6 /* Everest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +37,6 @@
 		068BFA52273440040042BC63 = {
 			isa = PBXGroup;
 			children = (
-				068BFA6C2734401D0042BC63 /* Packages */,
 				068BFA5D273440040042BC63 /* SectorExample */,
 				068BFA5C273440040042BC63 /* Products */,
 				068BFA6E273440D70042BC63 /* Frameworks */,
@@ -72,14 +70,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		068BFA6C2734401D0042BC63 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				068BFA6D2734401D0042BC63 /* FrameworkDeGraficos */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		068BFA6E273440D70042BC63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +94,7 @@
 			);
 			name = SectorExample;
 			packageProductDependencies = (
-				068BFA6F273440D70042BC63 /* FrameworkDeGraficos */,
+				069EA16E2735976C009FB8B6 /* Everest */,
 			);
 			productName = SectorExample;
 			productReference = 068BFA5B273440040042BC63 /* SectorExample.app */;
@@ -134,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 068BFA52273440040042BC63;
+			packageReferences = (
+				069EA16D2735976C009FB8B6 /* XCRemoteSwiftPackageReference "NC4" */,
+			);
 			productRefGroup = 068BFA5C273440040042BC63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,10 +358,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		069EA16D2735976C009FB8B6 /* XCRemoteSwiftPackageReference "NC4" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Developer-Academy-Mackenzie-2021-2022/NC4";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		068BFA6F273440D70042BC63 /* FrameworkDeGraficos */ = {
+		069EA16E2735976C009FB8B6 /* Everest */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FrameworkDeGraficos;
+			package = 069EA16D2735976C009FB8B6 /* XCRemoteSwiftPackageReference "NC4" */;
+			productName = Everest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

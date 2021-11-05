@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FrameworkDeGraficos
+import Everest
 
 @main
 struct SectorExampleApp: App {
