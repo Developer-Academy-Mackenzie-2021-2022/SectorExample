@@ -38,11 +38,15 @@ PieChart(data: [Double], cor: [Color]>, legenda: [String])
 Exemplo de entrada:
 ```swift
 PieChart(
-                            data: [30, 25, 15, 30],
-                            cor: [.color1, .color2, .color3, .color4],
-                            legenda: ["Ex.1", "Ex.2", "Ex.3", "Ex.4"])
-````
+            data: [30, 25, 15, 30],
+            cor: [.color1, .color2, .color3, .color4],
+            legenda: ["Ex.1", "Ex.2", "Ex.3", "Ex.4"]
+)
+                  
 
+````
+<img width="377" alt="Screen Shot 2021-11-05 at 17 33 18" src="https://user-images.githubusercontent.com/77726310/140575292-e0c87d7e-c295-418b-a13f-03aa64f81327.png">
+                 
 # 5. Componentes
 ### Parâmetros de entrada para criação do gráfico
 
